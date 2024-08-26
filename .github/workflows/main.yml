@@ -3,6 +3,8 @@ on: [push]
 jobs:
   Sync:
     runs-on: ubuntu-latest
+    env:
+      HF_HUB_ENABLE_HF_TRANSFER: 1
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -12,7 +14,9 @@ jobs:
           username: ${{ secrets.HF_USERNAME }}
           key: ${{ secrets.HF_KEY }}
           add_to_git_credentials: true
+      - name: Enable hf_transfer
+        run: pip install huggingface_hub[hf_transfer]
       - name: Check if logged in
-        run: |
-          huggingface-cli whoami
-          huggingface-cli upload AlphaSphereDotAI/chatacher . .
+        run: huggingface-cli whoami
+      - name: Upload
+        run: huggingface-cli upload AlphaSphereDotAI/chatacher . .
