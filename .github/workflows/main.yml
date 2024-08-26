@@ -15,3 +15,4 @@ jobs:
       - name: Check if logged in
         run: |
           huggingface-cli whoami
+          huggingface-cli upload AlphaSphereDotAI/chatacher . .
