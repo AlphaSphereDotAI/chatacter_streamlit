@@ -1,7 +1,7 @@
 name: Push to huggingface
 on: [push]
 jobs:
-  example-job:
+  Sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
