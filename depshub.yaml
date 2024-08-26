@@ -1,7 +1,7 @@
 version: 1
 licenses: ['MIT', 'Apache-1.1', 'Apache-2.0', 'Unlicense', 'BSD-2-Clause']
 updates:
-  schedule: ['auto'] # ['0 0 * * 6'] | ['off']
+  schedule: ['0 12 * * *'] # ['0 0 * * 6'] | ['off']
   types: ['security', 'major', 'minor', 'patch'] # the order is important
   stability_delay:
     security: 0
