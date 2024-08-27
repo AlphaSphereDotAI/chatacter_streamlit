@@ -19,4 +19,4 @@ jobs:
       - name: Check if logged in
         run: huggingface-cli whoami
       - name: Upload
-        run: huggingface-cli upload AlphaSphereDotAI/chatacher . . --repo-type space
+        run: huggingface-cli upload AlphaSphereDotAI/chatacter . . --repo-type space
