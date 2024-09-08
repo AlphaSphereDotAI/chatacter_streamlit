@@ -1,9 +1,9 @@
 [project]
-name = "chatacter_gradio"
+name = "chatacter_streamlit"
 version = "0.1.0"
-description = "Gradio app for character"
+description = "Streamlit app for character"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "gradio>=4.43.0",
+    "streamlit>=1.38.0",
 ]
