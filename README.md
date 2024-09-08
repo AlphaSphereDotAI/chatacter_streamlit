@@ -3,10 +3,10 @@ title: Chatacher
 emoji: 👀
 colorFrom: gray
 colorTo: blue
-sdk: streamlit
+sdk: gradio
 app_file: app.py
 pinned: false
-sdk_version: 1.37.1
+sdk_version: 4.43.0
 ---
 
 # Streamlit Part of Chatacter
