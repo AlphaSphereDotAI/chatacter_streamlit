@@ -11,7 +11,7 @@ jobs:
       - name: Login to HuggingFace Hub
         uses: osbm/huggingface-login@v0.0.2
         with:
-          username: ${{ secrets.HF_USERNAME }}
+          username: MH0386
           key: ${{ secrets.HF_KEY }}
           add_to_git_credentials: true
       - name: Enable hf_transfer
@@ -19,4 +19,4 @@ jobs:
       - name: Check if logged in
         run: huggingface-cli whoami
       - name: Upload
-        run: huggingface-cli upload AlphaSphereDotAI/chatacter . . --repo-type space
+        run: huggingface-cli upload AlphaSphereDotAI/Chatacter . --repo-type space  --exclude=".github*"
